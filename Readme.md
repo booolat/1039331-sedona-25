@@ -1,7 +1,7 @@
 ﻿# Личный проект «Седона»
 
 * Студент: [Булат Нупбаев](https://up.htmlacademy.ru/htmlcss/25/user/1039331).
-* Наставник: [Максим Клевцов].
+* Наставник: [Максим Клевцов](https://htmlacademy.ru/profile/maxklevtsov).
 
 ---
 
