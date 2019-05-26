@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -19,64 +22,56 @@
       </nav>
     </header>
     <main class="container">
-      <h1 class="visually-hidden">Сайт города Седона</h1>
-      <section class="welcome">
-        <!--Здесь будет фон-->
-        <h2 class="visually-hidden">
-          Добро пожаловать в Седону
-        </h2>
-        <img src="img/welcome-title.svg" width="458" height="352" alt="Добро пожаловать!">
-        <b>Седона — небольшой городок в Аризоне,
-          заслуживающий большего!
-        </b>
-      </section>
-        <section class="features">
-          <h2 class="visually-hidden">
-            Достоинства Седоны
-          </h2>
-          <p class="features-pretext">
-            Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
-          </p>
-        </section>
-        <section class="hotel-search">
-          <h2>Заинтересовались?</h2>
-          <p>Укажите предполагаемые даты поездки,
-            и мы покажем вам лучшие предложения гостиниц в Седоне
-          </p>
-          <button class="search-form-toggle">Поиск гостиницы в Седоне</button>
-          <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset class="date">
-              <legend class="visually-hidden">Даты проживания</legend>
-              <label for="checkin-date">Дата заезда:</label>
-              <input type="date" id="checkin-date" name="checkin-date" value="2017-04-24">
-              <br>
-              <label for="checkout-date">Дата выезда:</label>
-              <input type="date" id="checkout-date" name="checkout-date" value="2017-07-04">
-            </fieldset>
-            <fieldset class="guests">
-              <legend class="visually-hidden">Проживающие</legend>
-              <label for="adults">Взрослые:</label>
-              <input type="number" value="2" id="adults" name="adults"><br>
-              <label for="kids">Дети:</label>
-              <input type="number" id="kids" value="0">
-            </fieldset>
-            <input type="submit" id="find-hotels" name="find-hotels" value="Найти">
-            <label for="find-hotels" class-"visually-hidden">Найти</label>
-          </form>
-        </section>
+      <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
+      <div class="welcome-pictures">
+      <img src="img/welcome.svg" alt="" width="459" height="353">
+      <!--<img src="css/img/background-mask.svg" alt="" width="1201" height="59">-->
+      </div>
+      <div class="welcome-text">
+        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+      </div>
+      <div class="hotel-search-prompt">
+        <h2>Заинтересовались?</h2>
+        <p>Укажите предполагаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+      </div>
+      <button class="search-form-toggle">Поиск гостиницы в Седоне</button>
+      <div class="hotel-search">
+        <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="date">
+            <legend class="visually-hidden">Даты проживания</legend>
+            <label for="checkin-date">Дата заезда:</label>
+            <input type="text" id="checkin-date" name="checkin-date" value="24 апреля 2017">
+            <br>
+            <label for="checkout-date">Дата выезда:</label>
+            <input type="text" id="checkout-date" name="checkout-date" value="4 июля 2017">
+          </fieldset>
+          <fieldset class="guests">
+            <legend class="visually-hidden">Проживающие</legend>
+            <label for="adults">Взрослые:</label>
+            <input type="number" value="2" id="adults" name="adults"><br>
+            <label for="kids">Дети:</label>
+            <input type="number" id="kids" value="0">
+          </fieldset>
+          <input class="search-button" type="submit" id="find-hotels" name="find-hotels" value="Найти">
+          <label for="find-hotels" class="visually-hidden">Найти</label>
+        </form>
+      </div>
     </main>
     <footer class="main-footer">
       <p class="footer-hashtag">
         #visitsedona
       </p>
-      <ul>
+      <ul class="social-button">
           <li><a class="social-button" href="#">Twitter</a></li>
           <li><a class="social-button" href="#">Facebook</a></li>
           <li><a class="social-button" href="#">YouTube</a></li>
       </ul>
       <p class="footer-copyright">
-        <b>Website by</b>
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+        Website by
+        <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
   </body>
