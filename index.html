@@ -8,32 +8,32 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="gray-back">
+    <div class="back-image">
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
         </a>
-        <ul class="main-menu">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="photo-video.html">Фото и видео</a></li>
-          <li><a href="state-map.html">Карта штата</a></li>
-          <li><a href="hotels.html">Гостиницы</a></li>
-        </ul>
+        <a class="left-align" href="info.html">Информация</a>
+        <a class="left-align" href="photo-video.html">Фото и видео</a>
+        <a class="right-align" href="state-map.html">Карта штата</a>
+        <a class="right-align" href="hotels.html">Гостиницы</a>
       </nav>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <div class="welcome-pictures">
-      <img src="img/welcome.svg" alt="" width="459" height="353">
-      <!--<img src="css/img/background-mask.svg" alt="" width="1201" height="59">-->
+      <div class="welcome-gorgeous">
+        <img src="img/welcome.svg" alt="" width="459" height="353">
       </div>
+      <div class="back-mask"></div>
       <div class="welcome-text">
-        <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+        <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
       <div class="hotel-search-prompt">
         <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки,
+        <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
       </div>
@@ -59,6 +59,7 @@
           <label for="find-hotels" class="visually-hidden">Найти</label>
         </form>
       </div>
+      </div>
     </main>
     <footer class="main-footer">
       <p class="footer-hashtag">
@@ -74,5 +75,6 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
       </p>
     </footer>
+    </div>
   </body>
 </html>
