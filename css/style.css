@@ -199,9 +199,6 @@ button.search-form-toggle:active {
 
 .hotel-search {
   background-color: #ffffff;
-}
-
-.hotel-search form {
   display: flex;
   flex-wrap: wrap;
   width: 458px;
@@ -215,21 +212,28 @@ button.search-form-toggle:active {
 
 .hotel-search p {
   width: 458px;
-  margin: 0;
   margin-bottom: 30px;
-  padding: 0;
+  margin-top: 0;
   border: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
   align-items: center;
+}
+
+.hotel-search label {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .date label {
   width: 100px;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-search input {
-  background-color: #f2f2f2;
   border: none;
   font-size: 14px;
   line-height: 26px;
@@ -241,11 +245,11 @@ button.search-form-toggle:active {
 .date input  {
   box-sizing: border-box;
   display: block;
-  padding-top: 0;
-  padding-bottom: 0;
   width: 346px;
   height: 38px;
   padding-left: 12px;
+  margin-left: 12px;
+  background-color: rgb(242, 242, 242);
 }
 
 .checkin {
@@ -278,88 +282,46 @@ button.search-form-toggle:active {
   fill: #81b3d2;
 }
 
-.guests {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-p.guests {
-  margin-bottom: 54px;
-  position: relative;
-}
-
 .guests input {
-  box-sizing: border-box;
-  display: block;
-  width: 114px;
+  padding: 0;
+  width: 38px;
   height: 38px;
   text-align: center;
+  background-color: rgb(242, 242, 242);
 }
 
-.label-kids {
-  position: relative;
-  left: 14px;
-}
-
- .minus {
-  position: absolute;
-  width: 11px;
-  height: 11px;
+.guests span {
+  display: block;
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+  padding-top: 8px;
   font-size: 26px;
-  color: #a9a9a9;
-  top: 8px;
-  left: 124px;
+  color: #cacaca;
+  text-align: center;
+  background-color: rgb(242, 242, 242);
 }
 
-.plus {
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  font-size: 26px;
-  color: #a9a9a9;
-  top: 8px;
-  left: 200px;
+.adults-label-margin {
+  margin-right: 40px;
 }
 
-.minus1 {
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  font-size: 26px;
-  color: #a9a9a9;
-  top: 8px;
-  left: 357px;
-}
-
-.plus1 {
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  font-size: 26px;
-  color: #a9a9a9;
-  top: 8px;
-  left: 432px;
+.kids-label-margin {
+  margin-left: 55px;
+  margin-right: 25px;
 }
 
 .minus:focus,
 .minus:hover,
 .plus:hover,
-.plus:focus,
-.minus1:focus,
-.minus1:hover,
-.plus1:focus,
-.plus1:hover {
+.plus:focus {
   color: black;
 }
 
 .minus:active,
-.plus:active,
-.minus1:active,
-.plus1:active {
+.plus:active {
   color: #81b3d2;
 }
-
 
 .hotel-search input:hover {
   background-color: #ebebeb;
@@ -369,13 +331,6 @@ p.guests {
   background-color: #ffffff;
 }
 
-.hotel-search label {
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .hotel-search .search-button {
   background-color: #81b3d2;
   color: #ffffff;
@@ -383,10 +338,9 @@ p.guests {
   line-height: 26px;
   width: 100%;
   height: 58px;
-  margin: 0;
-  padding: 0;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 20px;
 }
 
 .hotel-search .search-button:hover,
@@ -494,8 +448,6 @@ button.button:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
-
-
 
 /* стили сетки */
 
