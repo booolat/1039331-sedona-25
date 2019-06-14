@@ -245,29 +245,28 @@ button.search-form-toggle:active {
 .date input  {
   box-sizing: border-box;
   display: block;
-  width: 346px;
+  width: 308px;
   height: 38px;
   padding-left: 12px;
   margin-left: 12px;
   background-color: rgb(242, 242, 242);
 }
 
-.checkin {
-  position: relative;
-}
-
-.checkout {
-  position: relative;
-}
-
-.checkin svg,
-.checkout svg {
-  width: 21px;
-  height: 22px;
-  background-color: transparent;
-  position: absolute;
-  right: 9px;
+.calendar {
+  width: 38px;
+  height: 38px;
+  border: none;
+  background-color: rgb(242, 242, 242);
   fill: #cacaca;
+}
+
+.calendar:hover,
+.calendar:focus {
+  fill: black;
+}
+
+.calendar:active {
+  fill: #81b3d2;
 }
 
 .checkin svg:hover,
