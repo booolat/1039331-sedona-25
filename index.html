@@ -12,13 +12,11 @@
     <div class="back-image">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
-        </a>
-        <a class="left-align" href="info.html">Информация</a>
-        <a class="left-align" href="photo-video.html">Фото&nbsp;и&nbsp;видео</a>
-        <a class="right-align" href="state-map.html">Карта&nbsp;штата</a>
-        <a class="right-align" href="inner.html">Гостиницы</a>
+        <span class="left-align"><a href="info.html">Информация</a></span>
+        <span class="left-align"><a href="photo-video.html">Фото&nbsp;и&nbsp;видео</a></span>
+        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
+        <span class="right-align"><a href="state-map.html">Карта&nbsp;штата</a></span>
+        <span class="right-align"><a href="inner.html">Гостиницы</a></span>
       </nav>
     </header>
     <main class="container">
@@ -30,6 +28,49 @@
         <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
       </div>
+      <section class="advantages">
+        <h2 class="visually-hidden">Преимущества</h2>
+        <div>
+          <h3>Настоящий<br> городок</h3>
+          — №1 —
+          <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
+        </div>
+        <span class="feature-picture1"></span>
+        <div class="housing">
+          <h3>Жильё</h3>
+          <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
+        </div>
+        <div class="food">
+          <h3>Еда</h3>
+          <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+        </div>
+        <div class="souvenirs">
+          <h3>Сувениры</h3>
+          <p>Не только китайского, но и местного<br> производства!</p>
+        </div>
+        <span class="feature-picture2"></span>
+        <div>
+          <h3>Там есть<br> мост дьявола</h3>
+          — №2 —
+          <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
+        </div>
+        <div>
+          <h3>Небольшая<br> площадь</h3>
+          — №3 —
+          <p>Все достопримечательности<br> находятся очень близко</p>
+        </div>
+        <div>
+          <h3>Красивая<br> дорога</h3>
+          — №4 —
+          <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
+        </div>
+        <div>
+          <h3>Мало<br> туристов</h3>
+          — №5 —
+          <p>Большинство едет в Гранд-Каньон<br> и толпится там</p>
+        </div>
+
+      </section>
       <div class="hotel-search-prompt">
         <h2>Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки,<br>
@@ -37,6 +78,7 @@
         </p>
       </div>
       <button class="search-form-toggle">Поиск гостиницы в Седоне</button>
+      <div class="map"></div>
       <div class="hotel-search">
         <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
           <h3 class="visually-hidden">Даты проживания</h3>

@@ -11,19 +11,69 @@
     <div class="gray-back">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
-        </a>
-        <a class="left-align" href="info.html">Информация</a>
-        <a class="left-align" href="photo-video.html">Фото&nbsp;и&nbsp;видео</a>
-        <a class="right-align" href="state-map.html">Карта&nbsp;штата</a>
-        <a class="right-align" href="inner.html">Гостиницы</a>
+        <span class="left-align"><a href="info.html">Информация</a></span>
+        <span class="left-align"><a href="photo-video.html">Фото&nbsp;и&nbsp;видео</a></span>
+        <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
+        <span class="right-align"><a href="state-map.html">Карта&nbsp;штата</a></span>
+        <span class="right-align"><a class="active" href="inner.html">Гостиницы</a></span>
       </nav>
     </header>
     <main class="container">
-      <h1 class="visually-hidden">
-        Поиск отелей
-      </h1>
+      <form  class="search-settings" action="https://echo.htmlacademy.ru" method="post">
+        <h2 class="visually-hidden">Настройки поиска</h2>
+        <div class="accomodations">
+          <h3>Инфраструктура:</h3>
+          <label for="pool">Бассейн
+            <input class="visually-hidden" type="checkbox" id="pool" name="pool-checkbox" checked>
+            <span class="checkbox-indicator"></span>
+          </label>
+          <label for="parking">Парковка
+            <input class="visually-hidden" type="checkbox" id="parking" name="parking-checkbox">
+            <span class="checkbox-indicator"></span>
+          </label>
+          <label for="wifi">Wi-Fi
+            <input class="visually-hidden" type="checkbox" id="wifi" name="wifi-checkbox">
+            <span class="checkbox-indicator"></span>
+          </label>
+        </div>
+        <div class="housing-type">
+          <h3>Тип жилья:</h3>
+          <label for="hotel">Гостиница
+            <input class="visually-hidden" type="checkbox" id="hotel" name="hotel-checkbox" checked disabled>
+            <span class="checkbox-indicator"></span>
+          </label>
+          <label for="motel">Мотель
+            <input class="visually-hidden" type="checkbox" id="motel" name="motel-checkbox" checked>
+            <span class="checkbox-indicator"></span>
+          </label>
+          <label for="apartment">Апартаменты
+          <input class="visually-hidden" type="checkbox" id="apartment" name="apartment-checkbox" checked>
+          <span class="checkbox-indicator"></span>
+          </label>
+        </div>
+        <div class="price-slider">
+          <h3>Стоимость в сутки (Р):</h3>
+          <div class="wrapper">
+            <input type="text" id="min-price" name="min-filter" value="от 0">
+            <input type="text" id="max-price" name="max-filter" value="до 3000">
+          </div>
+          <div class="slider"><span></span><hr/><span></span><hr/></div>
+          <input class="show-results-button" type="submit" id="show-search-results" name="show-hotels" value="Показать">
+        </div>
+      </form>
+      <section class="search-results-sorting">
+        <h2>Найдено: 3</h2>
+        <div class="sorting-mode">
+          <h3>Сортировка:</h3>
+          <a class="active" href="#">По цене</a>
+          <a href="#">По типу</a>
+          <a href="#">По рейтингу</a>
+        </div>
+        <span class="sorting-arrows">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+          <svg class="active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+        </span>
+      </section>
       <h2 class="visually-hidden">Результаты поиска</h2>
       <ul class="hotel-search-results">
         <li>
