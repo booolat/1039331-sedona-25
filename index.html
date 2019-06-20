@@ -9,20 +9,20 @@
   </head>
   <body>
     <div class="gray-back">
-    <div class="back-image">
     <header class="main-header">
       <nav class="main-navigation">
-        <span class="left-align"><a href="info.html">Информация</a></span>
-        <span class="left-align"><a href="photo-video.html">Фото&nbsp;и&nbsp;видео</a></span>
         <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
-        <span class="right-align"><a href="state-map.html">Карта&nbsp;штата</a></span>
-        <span class="right-align"><a href="inner.html">Гостиницы</a></span>
+        <ul class="main-menu">
+          <li><a href="info.html">Информация</a></li>
+          <li class="menu-right-margin"><a href="photo-video.html">Фото&nbsp;и&nbsp;видео</a></li>
+          <li class="right-align menu-left-margin"><a href="state-map.html">Карта&nbsp;штата</a></li>
+          <li class="right-align"><a href="inner.html">Гостиницы</a></li>
+        </ul>
       </nav>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
       <div class="welcome-gorgeous">
-        <img src="img/welcome.svg" alt="" width="459" height="353">
       </div>
       <div class="welcome-text">
         <h2>Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</h2>
@@ -36,15 +36,15 @@
           <p>Седона — не аттракцион для туристов,<br> там течёт своя жизнь</p>
         </div>
         <span class="feature-picture1"></span>
-        <div class="housing">
+        <div class="housing features">
           <h3>Жильё</h3>
           <p>Рекомендуем пожить в настоящем<br> мотеле, всё как в кино!</p>
         </div>
-        <div class="food">
+        <div class="food features">
           <h3>Еда</h3>
           <p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
         </div>
-        <div class="souvenirs">
+        <div class="souvenirs features">
           <h3>Сувениры</h3>
           <p>Не только китайского, но и местного<br> производства!</p>
         </div>
@@ -54,17 +54,17 @@
           — №2 —
           <p>Да, по нему можно пройти! Если конечно<br> вы осмелитесь</p>
         </div>
-        <div>
+        <div class="grey-advantages">
           <h3>Небольшая<br> площадь</h3>
           — №3 —
           <p>Все достопримечательности<br> находятся очень близко</p>
         </div>
-        <div>
+        <div class="grey-advantages">
           <h3>Красивая<br> дорога</h3>
           — №4 —
           <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
         </div>
-        <div>
+        <div class="grey-advantages">
           <h3>Мало<br> туристов</h3>
           — №5 —
           <p>Большинство едет в Гранд-Каньон<br> и толпится там</p>
@@ -76,42 +76,41 @@
         <p>Укажите предполагаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
+        <button class="search-form-toggle">Поиск гостиницы в Седоне</button>
+        <div class="hotel-search">
+          <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
+            <h3 class="visually-hidden">Даты проживания</h3>
+            <p class="date checkin">
+              <label for="checkin-date">Дата&nbsp;заезда:</label>
+              <input type="text" id="checkin-date" name="checkin-date" value="24 апреля 2017 ">
+              <button class="calendar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+              </button>
+            </p>
+            <p class="date checkout">
+              <label for="checkout-date">Дата выезда:</label>
+              <input type="text" id="checkout-date" name="checkout-date" value="4 июля 2017">
+              <button class="calendar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
+              </button>
+            </p>
+            <h3 class="visually-hidden">Проживающие</h3>
+            <p class="guests">
+              <label class="adults-label-margin" for="adults">Взрослые:</label>
+              <span class="minus">−</span>
+              <input type="text" value="2" id="adults" name="adults">
+              <span class="plus">+</span>
+              <label class="kids-label-margin" for="kids">Дети:</label>
+              <span class="minus">−</span>
+              <input type="text" id="kids" value="0">
+              <span class="plus">+</span>
+            </p>
+            <input class="search-button" type="submit" id="find-hotels" name="find-hotels" value="Найти">
+            <label for="find-hotels" class="visually-hidden">Найти</label>
+          </form>
+        </div>
       </div>
-      <button class="search-form-toggle">Поиск гостиницы в Седоне</button>
-      <div class="map"></div>
-      <div class="hotel-search">
-        <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
-          <h3 class="visually-hidden">Даты проживания</h3>
-          <p class="date checkin">
-            <label for="checkin-date">Дата&nbsp;заезда:</label>
-            <input type="text" id="checkin-date" name="checkin-date" value="24 апреля 2017 ">
-            <button class="calendar">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-            </button>
-          </p>
-          <p class="date checkout">
-            <label for="checkout-date">Дата выезда:</label>
-            <input type="text" id="checkout-date" name="checkout-date" value="4 июля 2017">
-            <button class="calendar">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="22" viewBox="0 0 21 22"><path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z"/></svg>
-            </button>
-          </p>
-          <h3 class="visually-hidden">Проживающие</h3>
-          <p class="guests">
-            <label class="adults-label-margin" for="adults">Взрослые:</label>
-            <span class="minus">−</span>
-            <input type="text" value="2" id="adults" name="adults">
-            <span class="plus">+</span>
-            <label class="kids-label-margin" for="kids">Дети:</label>
-            <span class="minus">−</span>
-            <input type="text" id="kids" value="0">
-            <span class="plus">+</span>
-          </p>
-          <input class="search-button" type="submit" id="find-hotels" name="find-hotels" value="Найти">
-          <label for="find-hotels" class="visually-hidden">Найти</label>
-        </form>
-      </div>
-      </div>
+      <div class="map"></div>      
     </main>
     <footer class="main-footer">
       <p class="footer-hashtag">
