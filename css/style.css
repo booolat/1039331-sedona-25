@@ -40,6 +40,7 @@ img {
 }
 
 .main-navigation {
+  position: relative;
   min-height: 56px;
   box-sizing: border-box;
   flex-wrap: nowrap;
@@ -92,17 +93,20 @@ img {
 
 .logo-link {
   display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
   width: 140px;
   height: 71px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .main-navigation img {
   position: absolute;
   top: 0px;
-  left: 577px;
+  width: 140px;
+  left: 50%;
+  transform: translate(-50%);
 }
 
 .main-navigation a:hover {
@@ -172,15 +176,22 @@ img {
 }
 
 .advantages h3 {
+  width: 160px;
   font-size: 21px;
   line-height: 21px;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 24px;
 }
 
 .advantages p {
-  margin: 0;
+  width: 285px;
+  margin: 0 auto;
   margin-top: 20px;
+}
+
+.advantages .long-paragraph {
+  display: block;
+  width: 320px;
 }
 
 .advantages .features {
@@ -194,7 +205,7 @@ img {
 }
 
 .features p {
-  margin: 0;
+  margin: 0 auto;
   color: #333333;
 }
 
@@ -549,7 +560,6 @@ img {
   padding-top: 3px;
   padding-left: 17px;
   padding-right: 17px;
-
 }
 
 .hotel-search-results a.button:hover,
@@ -562,7 +572,7 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.button {
+.hotel-search-results a.book {
   background-color: #766357;
   border: 0;
   padding: 0;
@@ -572,11 +582,12 @@ img {
   padding-right: 17px;
 }
 
-.button:hover {
+.hotel-search-results a.book:hover,
+.hotel-search-results a.book:focus {
   background-color: #604e43;
 }
 
-.button:active {
+.hotel-search-results a.book:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -706,11 +717,6 @@ img {
   padding-left: 42px;
 }
 
-.search-settings label:hover,
-.search-settings label:focus {
-  color: #ff0000;
-}
-
 .search-settings input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: -1px;
@@ -720,6 +726,10 @@ img {
   z-index: 0;
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
+}
+
+.search-settings input[type="checkbox"]:focus + .checkbox-indicator {
+  border: 1px solid red;
 }
 
 .search-settings input[type="checkbox"]:checked + .checkbox-indicator {
@@ -734,6 +744,10 @@ img {
   z-index: 1;
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
+}
+
+.search-settings input[type="checkbox"]:checked:focus + .checkbox-indicator::before {
+  border: 1px solid red;
 }
 
 .search-settings input:disabled + .checkbox-indicator {
