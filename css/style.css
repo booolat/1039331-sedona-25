@@ -729,7 +729,7 @@ img {
 }
 
 .search-settings input[type="checkbox"]:focus + .checkbox-indicator {
-  border: 1px solid red;
+  border: 1px solid #81b3d2;
 }
 
 .search-settings input[type="checkbox"]:checked + .checkbox-indicator {
@@ -747,7 +747,7 @@ img {
 }
 
 .search-settings input[type="checkbox"]:checked:focus + .checkbox-indicator::before {
-  border: 1px solid red;
+  border: 1px solid #81b3d2;
 }
 
 .search-settings input:disabled + .checkbox-indicator {
@@ -845,7 +845,7 @@ img {
   margin-top: 3px;
 }
 
-.slider span {
+.slider div {
   background-image: url("../img/filter-button.svg");
   background-repeat: no-repeat;
   width: 22px;
@@ -854,8 +854,8 @@ img {
   padding: 0;
 }
 
-.slider span:hover,
-.slider span:focus {
+.slider div:hover,
+.slider div:focus {
   transform: scale(1.1);
 }
 

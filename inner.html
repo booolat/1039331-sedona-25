@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-minified.css" rel="stylesheet">
   </head>
   <body class="inner">
     <div class="gray-back">
@@ -59,7 +59,7 @@
             <input type="text" id="min-price" name="min-filter" value="от 0">
             <input type="text" id="max-price" name="max-filter" value="до 3000">
           </div>
-          <div class="slider"><span></span><hr/><span></span><hr/></div>
+          <div class="slider"><div></div><hr/><div></div><hr/></div>
           <input class="show-results-button" type="submit" id="show-search-results" name="show-hotels" value="Показать">
         </div>
       </form>
@@ -72,8 +72,12 @@
           <a href="#">По рейтингу</a>
         </div>
         <div class="sorting-arrows">
+        <a class="up" href="up.html">
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+        </a>
+        <a class="down" href="down.html">
           <svg class="active" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+        </a>
         </div>
       </section>
       <h2 class="visually-hidden">Результаты поиска</h2>
